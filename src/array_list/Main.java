@@ -25,5 +25,34 @@ public class Main {
 
         System.out.println();
         Collections.sort(lista); //sortowanie listy
+
+        System.out.println("Elementy posortowane.");
+
+        for (int i = 0; i < lista.size(); i++)
+        {
+            if (i < lista.size() - 1)
+                System.out.println(lista.get(i) + ", ");
+            else
+                System.out.println(lista.get(i) + ".");
+        }
+
+        System.out.println();
+        lista.remove(1); //usunięto drugi elenent listy
+        System.out.println("Usunięto drugi element listy i dodano nowy element do listy");
+
+        lista.add(10); //dodano nowy element do listy
+        System.out.println("Elementy nie posortowane po usunieciu z listy i dodaniu nowego elementu");
+
+        for (int i = 0; i < lista.size(); i++)
+        {
+            if (i < lista.size() - 1)
+                System.out.println(lista.get(i) + ", ");
+            else
+                System.out.println(lista.get(i) + ".");
+        }
+
+        Collections.sort(lista); //ponowne sortowanie listy
+
+        
     }
 }
