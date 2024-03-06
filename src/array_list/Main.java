@@ -53,6 +53,17 @@ public class Main {
 
         Collections.sort(lista); //ponowne sortowanie listy
 
-        
+        System.out.println();
+        System.out.println("Ponowne sortowanie listy.");
+
+        for (int i = 0; i < lista.size(); i++)
+        {
+            if (i < lista.size() - 1)
+                System.out.println(lista.get(i) + ", ");
+            else
+                System.out.println(lista.get(i) + ".");
+        }
+
+        System.out.println();
     }
 }
